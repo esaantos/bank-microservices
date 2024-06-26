@@ -1,0 +1,11 @@
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\bin\Debug\net8.0\CreditsProposal.Core.deps.json
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\bin\Debug\net8.0\CreditsProposal.Core.dll
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\bin\Debug\net8.0\CreditsProposal.Core.pdb
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.AssemblyInfoInputs.cache
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.AssemblyInfo.cs
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.csproj.CoreCompileInputs.cache
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.dll
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\refint\CreditsProposal.Core.dll
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\CreditsProposal.Core.pdb
+C:\PaymentAutomation\ParanaBank\CreditProposal\CreditProposal\CreditsProposal.Core\obj\Debug\net8.0\ref\CreditsProposal.Core.dll

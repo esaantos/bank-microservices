@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF390C03-9B5F-4EA1-9D84-40C317CBC9EC}|Custumer.API\\Customers.API.csproj|c:\\paymentautomation\\paranabank\\custumer\\custumer.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF390C03-9B5F-4EA1-9D84-40C317CBC9EC}|Custumer.API\\Customers.API.csproj|solutionrelative:custumer.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.infrastructure\\messagebus\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|solutionrelative:customer.infrastructure\\messagebus\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.application\\subscribers\\createdcreditproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|solutionrelative:customer.application\\subscribers\\createdcreditproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.application\\subscribers\\createdcreditcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|solutionrelative:customer.application\\subscribers\\createdcreditcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Custumer.API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Custumer.API\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Custumer.API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Custumer.API\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T17:08:07.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventProcessor.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
+              "RelativeDocumentMoniker": "Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
+              "RelativeToolTip": "Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T17:07:20.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreatedCreditProposal.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "RelativeToolTip": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:57:27.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreatedCreditCard.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditCard.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\Subscribers\\CreatedCreditCard.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditCard.cs",
+              "RelativeToolTip": "Customer.Application\\Subscribers\\CreatedCreditCard.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:44:03.993Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

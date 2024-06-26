@@ -1,0 +1,12 @@
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\bin\Debug\net8.0\Customers.Core.deps.json
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\bin\Debug\net8.0\Customers.Core.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\bin\Debug\net8.0\Customers.Core.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.csproj.AssemblyReference.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.AssemblyInfoInputs.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.AssemblyInfo.cs
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.csproj.CoreCompileInputs.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\refint\Customers.Core.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\Customers.Core.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Core\obj\Debug\net8.0\ref\Customers.Core.dll

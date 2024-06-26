@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IV3SEe1hMuE=",
+  "success": true,
+  "projectFilePath": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Core\\Customers.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\everson.santos\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\everson.santos\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\everson.santos\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

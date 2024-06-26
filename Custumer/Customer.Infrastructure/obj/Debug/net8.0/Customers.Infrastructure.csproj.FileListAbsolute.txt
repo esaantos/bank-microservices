@@ -1,0 +1,17 @@
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Infrastructure.deps.json
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Infrastructure.runtimeconfig.json
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Infrastructure.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Infrastructure.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Core.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\bin\Debug\net8.0\Customers.Core.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.csproj.AssemblyReference.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.AssemblyInfoInputs.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.AssemblyInfo.cs
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.csproj.CoreCompileInputs.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customer.A95C0A9A.Up2Date
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\refint\Customers.Infrastructure.dll
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\Customers.Infrastructure.genruntimeconfig.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Customer.Infrastructure\obj\Debug\net8.0\ref\Customers.Infrastructure.dll
