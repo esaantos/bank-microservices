@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.Core\\CreditCards.Core.csproj",
+      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.Core\\CreditCards.Core.csproj",
       "projectName": "CreditCards.Core",
-      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.Core\\CreditCards.Core.csproj",
+      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.Core\\CreditCards.Core.csproj",
       "packagesPath": "C:\\Users\\everson.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.Core\\obj\\",
+      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\everson.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",

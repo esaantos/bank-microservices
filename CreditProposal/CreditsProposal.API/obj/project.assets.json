@@ -4866,11 +4866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.API\\CreditsProposal.API.csproj",
+      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.API\\CreditsProposal.API.csproj",
       "projectName": "CreditsProposal.API",
-      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.API\\CreditsProposal.API.csproj",
+      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.API\\CreditsProposal.API.csproj",
       "packagesPath": "C:\\Users\\everson.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.API\\obj\\",
+      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\everson.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4890,8 +4890,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj": {
-              "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj"
+            "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj": {
+              "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj"
             }
           }
         }

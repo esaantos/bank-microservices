@@ -1,5 +1,6 @@
 ﻿using CreditsProposal.Core.Entities;
 using CreditsProposal.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace CreditsProposal.Infrastructure.Persistence.Repositories;
 
@@ -22,4 +23,8 @@ public class CreditProposalRepository : ICreditProposalRepository
         await _context.SaveChangesAsync();
     }
 
+    public async Task<CreditProposal> GetCreditCardsByCustomerIdAsync(int customerId)
+    {
+        return await _context.CreditProposals.FirstOrDefaultAsync(c => c.CustomerId == customerId);
+    }
 }

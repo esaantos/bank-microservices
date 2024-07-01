@@ -1,13 +1,19 @@
 ﻿namespace CreditCards.Core.Events;
 
-public record CreditCardCreatedEvent
+public class CreditCardCreatedEvent : IDomainEvent
 {
-    public List<int> CreditCardId { get;  }
     public int CustomerId { get; }
+    public string CardHolderName { get; }
+    public string CardNumber { get; }
+    public DateTime ExpirationDate { get; }
+    public string CVV { get; }
 
-    public CreditCardCreatedEvent(List<int> creditCardId, int customerId)
+    public CreditCardCreatedEvent(int customerId, string cardHolderName, string cardNumber, DateTime expirationDate, string cvv)
     {
-        CreditCardId = creditCardId;
         CustomerId = customerId;
+        CardHolderName = cardHolderName;
+        CardNumber = cardNumber;
+        ExpirationDate = expirationDate;
+        CVV = cvv;
     }
 }

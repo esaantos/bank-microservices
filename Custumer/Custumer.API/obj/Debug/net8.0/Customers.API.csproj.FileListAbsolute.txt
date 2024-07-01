@@ -1,9 +1,3 @@
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.csproj.AssemblyReference.cache
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.AssemblyInfoInputs.cache
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.AssemblyInfo.cs
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.csproj.CoreCompileInputs.cache
-C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.MvcApplicationPartsAssemblyInfo.cache
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\appsettings.Development.json
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\appsettings.json
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\Customers.API.exe
@@ -129,7 +123,13 @@ C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\Customers
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\Customers.Application.pdb
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\Customers.Core.pdb
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\bin\Debug\net8.0\Customers.Infrastructure.pdb
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.csproj.AssemblyReference.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.AssemblyInfoInputs.cache
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.AssemblyInfo.cs
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.csproj.CoreCompileInputs.cache
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.MvcApplicationPartsAssemblyInfo.cs
+C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\Customers.API.MvcApplicationPartsAssemblyInfo.cache
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\PaymentAutomation\ParanaBank\Custumer\Custumer.API\obj\Debug\net8.0\staticwebassets\msbuild.Customers.API.Microsoft.AspNetCore.StaticWebAssets.props

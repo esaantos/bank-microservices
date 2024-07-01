@@ -2,5 +2,5 @@
 
 public interface IMessageBusClient
 {
-    void Publish(object message, string routingKey, string exchange);
+    void Publish<T>(T @event, string exchange) where T: class;
 }

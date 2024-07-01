@@ -20,11 +20,13 @@ public class CreditProposalEventHandler : INotificationHandler<CreditProposalCre
     {
         var customer = await _customerRepository.GetByIdAsync(notification.CustomerId);
         if(customer != null)
-        {
-            customer.AddCreditProposal(notification.ProposalId);
-            await _customerRepository.UpdateAsync(customer);
+        {            
+            customer.AddCreditProposal(notification.CreditValue);
+
+            await _customerRepository.UpdateCreditProposalsAsync(customer);
             _logger.LogInformation("Customer's credit proposal updated successfully.");
         }
-        _logger.LogWarning($"Customer {notification.CustomerId} was not found and actions related to the event were not executed!");
+        else
+            _logger.LogWarning($"Customer {notification.CustomerId} was not found and actions related to the event were not executed!");
     }
 }

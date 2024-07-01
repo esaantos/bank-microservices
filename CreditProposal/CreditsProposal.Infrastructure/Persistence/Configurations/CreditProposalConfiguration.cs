@@ -12,7 +12,8 @@ public class CreditProposalConfiguration : IEntityTypeConfiguration<CreditPropos
 
         builder
             .Property(cc => cc.CreditValue)
-            .IsRequired();
+            .IsRequired()
+            .HasColumnType("decimal(18,2)");
 
         builder
             .Property(cc => cc.CustomerId)

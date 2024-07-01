@@ -7,5 +7,5 @@ public interface ICreditCardService
 {
     Task<CreditCard> GetById(int id);
 
-    Task<bool> HandleCustomerCreatedAsync(CustomerCreated customerCreatedEvent, CancellationToken stoppingToken);
+    Task HandleCustomerCreatedAsync(CustomerCreated customerCreatedEvent, CancellationToken stoppingToken);
 }

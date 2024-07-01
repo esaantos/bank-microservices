@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q0Thzz4wItU=",
+  "dgSpecHash": "IL2xY9mC39M=",
   "success": true,
-  "projectFilePath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
+  "projectFilePath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\everson.santos\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\everson.santos\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

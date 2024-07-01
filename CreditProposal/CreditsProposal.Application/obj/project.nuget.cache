@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a0tPcaTI53E=",
+  "dgSpecHash": "1KHYhO7OGD4=",
   "success": true,
-  "projectFilePath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj",
+  "projectFilePath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.Application\\CreditsProposal.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\everson.santos\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\everson.santos\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

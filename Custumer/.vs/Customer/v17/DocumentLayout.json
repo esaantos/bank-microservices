@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF390C03-9B5F-4EA1-9D84-40C317CBC9EC}|Custumer.API\\Customers.API.csproj|c:\\paymentautomation\\paranabank\\custumer\\custumer.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF390C03-9B5F-4EA1-9D84-40C317CBC9EC}|Custumer.API\\Customers.API.csproj|solutionrelative:custumer.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{789ACA8D-F209-45BF-92C5-3FD25F76A4CD}|Customer.Core\\Customers.Core.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789ACA8D-F209-45BF-92C5-3FD25F76A4CD}|Customer.Core\\Customers.Core.csproj|solutionrelative:customer.core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.infrastructure\\messagebus\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|solutionrelative:customer.infrastructure\\messagebus\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{789ACA8D-F209-45BF-92C5-3FD25F76A4CD}|Customer.Core\\Customers.Core.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.core\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789ACA8D-F209-45BF-92C5-3FD25F76A4CD}|Customer.Core\\Customers.Core.csproj|solutionrelative:customer.core\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.infrastructure\\persistence\\respositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B5C33E6-54AD-4DF9-8477-9EDDC99778F5}|Customer.Infrastructure\\Customers.Infrastructure.csproj|solutionrelative:customer.infrastructure\\persistence\\respositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.application\\eventhandlers\\creditcardeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|solutionrelative:customer.application\\eventhandlers\\creditcardeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.application\\eventhandlers\\creditproposaleventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|solutionrelative:customer.application\\eventhandlers\\creditproposaleventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2CA9414-CF16-4B8C-8D62-4D04F59251EF}|Customer.Application\\Customers.Application.csproj|c:\\paymentautomation\\paranabank\\custumer\\customer.application\\subscribers\\createdcreditproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,53 +83,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Custumer.API\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Custumer.API\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Custumer.API\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Custumer.API\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Core\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "Customer.Core\\Entities\\Customer.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Core\\Entities\\Customer.cs",
+              "RelativeToolTip": "Customer.Core\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T17:08:07.086Z",
+              "WhenOpened": "2024-07-01T15:14:11.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EventProcessor.cs",
-              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
-              "RelativeDocumentMoniker": "Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
-              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
-              "RelativeToolTip": "Customer.Infrastructure\\MessageBus\\EventProcessor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Core\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Customer.Core\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Core\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "Customer.Core\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T17:07:20.383Z",
+              "WhenOpened": "2024-07-01T15:07:55.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreatedCreditProposal.cs",
-              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
-              "RelativeDocumentMoniker": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
-              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
-              "RelativeToolTip": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADUAAAANAAAA",
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\Persistence\\Respositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Customer.Infrastructure\\Persistence\\Respositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Infrastructure\\Persistence\\Respositories\\CustomerRepository.cs",
+              "RelativeToolTip": "Customer.Infrastructure\\Persistence\\Respositories\\CustomerRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC8AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:57:27.571Z",
+              "WhenOpened": "2024-07-01T15:06:30.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreditProposalEventHandler.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\EventHandlers\\CreditProposalEventHandler.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\EventHandlers\\CreditProposalEventHandler.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\EventHandlers\\CreditProposalEventHandler.cs",
+              "RelativeToolTip": "Customer.Application\\EventHandlers\\CreditProposalEventHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T12:37:57.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CreditCardEventHandler.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\EventHandlers\\CreditCardEventHandler.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\EventHandlers\\CreditCardEventHandler.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\EventHandlers\\CreditCardEventHandler.cs",
+              "RelativeToolTip": "Customer.Application\\EventHandlers\\CreditCardEventHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T12:36:37.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CreatedCreditCard.cs",
               "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditCard.cs",
               "RelativeDocumentMoniker": "Customer.Application\\Subscribers\\CreatedCreditCard.cs",
               "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditCard.cs",
               "RelativeToolTip": "Customer.Application\\Subscribers\\CreatedCreditCard.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAkAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAArwCsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:44:03.993Z",
+              "WhenOpened": "2024-07-01T13:01:17.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreatedCreditProposal.cs",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "RelativeDocumentMoniker": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\Custumer\\Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "RelativeToolTip": "Customer.Application\\Subscribers\\CreatedCreditProposal.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAArwCoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T13:01:17.192Z",
               "EditorCaption": ""
             }
           ]

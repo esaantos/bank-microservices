@@ -1,11 +1,11 @@
 ﻿using Customers.Core.Events;
-using System.Text;
 
 namespace Customers.Infrastructure.MessageBus;
 
 public class EventProcessor : IEventProcessor
 {
     private readonly IMessageBusClient _messageBusClient;
+    private const string Exchange = "customer-service";
 
     public EventProcessor(IMessageBusClient messageBusClient)
     {
@@ -16,45 +16,8 @@ public class EventProcessor : IEventProcessor
     {
         foreach (var @event in events)
         {
-            _messageBusClient.Publish(@event, MapConvention(@event),
-                "customer-service");
+            _messageBusClient.Publish(@event, Exchange);
         }
-    }
-
-    private string MapConvention(IDomainEvent @event)
-    {
-        return ToDashCase(@event.GetType().Name);
-    }
-
-    public string ToDashCase(string text)
-    {
-        if (text == null)
-        {
-            throw new ArgumentNullException(nameof(text));
-        }
-        if (text.Length < 2)
-        {
-            return text;
-        }
-        var sb = new StringBuilder();
-        sb.Append(char.ToLowerInvariant(text[0]));
-        for (int i = 1; i < text.Length; ++i)
-        {
-            char c = text[i];
-            if (char.IsUpper(c))
-            {
-                sb.Append('-');
-                sb.Append(char.ToLowerInvariant(c));
-            }
-            else
-            {
-                sb.Append(c);
-            }
-        }
-
-        Console.WriteLine($"ToDashCase: " + sb.ToString());
-
-        return sb.ToString();
     }
 }
 

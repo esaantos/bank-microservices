@@ -38,7 +38,8 @@ public static class ServiceCollectionExtensions
         var connection = connectionFactory.CreateConnection("creditproposal-service-producer");
 
         services.AddSingleton(connection);
-        services.AddSingleton<IEventPublisher, RabbitMQEventPublisher>();
+        services.AddSingleton<IMessageBusClient, RabbitMQEventPublisher>();
+        services.AddTransient<IEventProcessor, EventProcessor>();
 
         return services;
     }

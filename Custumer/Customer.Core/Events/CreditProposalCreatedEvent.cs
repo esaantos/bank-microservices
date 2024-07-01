@@ -4,14 +4,12 @@ namespace Customers.Core.Events;
 
 public record CreditProposalCreatedEvent : INotification
 {
-    public CreditProposalCreatedEvent(int customerId, int proposalId, bool success)
+    public CreditProposalCreatedEvent(int customerId, decimal creditValue)
     {
         CustomerId = customerId;
-        ProposalId = proposalId;
-        Success = success;
+        CreditValue = creditValue;
     }
 
     public int CustomerId { get; }
-    public int ProposalId { get; }
-    public bool Success { get; set; }
+    public decimal CreditValue { get; }
 }

@@ -15,7 +15,7 @@ public class CustomersRepository : ICustomersRepository
 
     public async Task<Customer> GetByIdAsync(int id)
     {
-        return await _context.Customers.SingleOrDefaultAsync(c => c.Id == id);
+        return await _context.Customers.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id);
     }
 
     public async Task AddAsync(Customer customers)
@@ -29,9 +29,35 @@ public class CustomersRepository : ICustomersRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<bool> AddCustomerCredit(Customer customer)
+    public async Task UpdateCreditCardNumbersAsync(Customer customer)
     {
-        return true;
+        try
+        {
+            _context.Entry(customer).Property(c => c.CreditCardNumbers).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception)
+        {
+            // Detach a entidade atual para evitar conflitos de rastreamento
+            _context.Entry(customer).State = EntityState.Detached;
+            throw;
+        }  
+
     }
 
+    public async Task UpdateCreditProposalsAsync(Customer customer)
+    {
+        try
+        {
+            _context.Entry(customer).Property(c => c.CreditProposalValue).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception)
+        {
+            // Detach a entidade atual para evitar conflitos de rastreamento
+            _context.Entry(customer).State = EntityState.Detached;
+            throw;
+        }
+        
+    }
 }

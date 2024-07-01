@@ -21,6 +21,6 @@ public class GetCustomerByIdQueryHandler : IRequestHandler<GetCustomerByIdQuery,
             return null;
 
         return new CustomerViewModel(customer.Id, customer.FullName, customer.Email, customer.Income, 
-            customer.CreditProposalId, customer.CreditCardIds);
+            customer.CreditProposalValue, customer.CreditCardNumbers.ToList());
     }
 }

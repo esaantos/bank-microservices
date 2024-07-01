@@ -7,5 +7,5 @@ public interface ICreditProposalService
 {
     Task<CreditProposal> GetById(int id);
 
-    Task<bool> HandlerProposalCreateAsync(CustomerCreated customerCreated, CancellationToken stoppingToken);
+    Task HandlerProposalCreateAsync(CustomerCreated customerCreated, CancellationToken stoppingToken);
 }

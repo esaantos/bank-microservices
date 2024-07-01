@@ -9,41 +9,44 @@ public class CreditCardService : ICreditCardService
 {
     private readonly ILogger<CreditCardService> _logger;
     private readonly ICreditCardRepository _creditCardRepository;
-    private readonly IEventPublisher _eventPublisher;
-    public CreditCardService(ICreditCardRepository creditCardRepository, ILogger<CreditCardService> logger, IEventPublisher eventPublisher)
+    private readonly IEventProcessor _eventProcessor;
+
+    public CreditCardService(ICreditCardRepository creditCardRepository, ILogger<CreditCardService> logger, IEventProcessor eventProcessor)
     {
-        _creditCardRepository = creditCardRepository;
         _logger = logger;
-        _eventPublisher = eventPublisher;
+        _creditCardRepository = creditCardRepository;
+        _eventProcessor = eventProcessor;
     }
     public async Task<CreditCard> GetById(int id)
     {
         return await _creditCardRepository.GetByIdAsync(id);
     }
 
-    public async Task<bool> HandleCustomerCreatedAsync(CustomerCreated customerCreatedEvent, CancellationToken stoppingToken)
+    public async Task HandleCustomerCreatedAsync(CustomerCreated customerCreatedEvent, CancellationToken stoppingToken)
     {
-        try
-        {
-            _logger.LogInformation("Creating Credit card...");
+        _logger.LogInformation("Creating Credit card...");
 
+        var existingCards = await _creditCardRepository.GetCreditCardsByCustomerIdAsync(customerCreatedEvent.Id);
+        if (existingCards.Any())
+        {
+            _logger.LogInformation($"Credit cards already exist for CustomerId: {customerCreatedEvent.Id}. Skipping creation.");
+            foreach (var card in existingCards) {
+
+                _eventProcessor.Process(card.Events);
+            }
+        }
+        else
+        {
             var creditCards = CreditCard.GenerateCreditCards(customerCreatedEvent.Id, customerCreatedEvent.FullName, customerCreatedEvent.Income);
 
-            await _creditCardRepository.AddAsync(creditCards);
+            foreach (var creditCard in creditCards) 
+            {
+                await _creditCardRepository.AddAsync(creditCard);
 
-            var creditCardCreatedEvent = new CreditCardCreatedEvent(creditCards.Select(i => i.Id).ToList(), customerCreatedEvent.Id);
-
-            await _eventPublisher.Publish(creditCardCreatedEvent);
-
-            _logger.LogInformation($"Credit card created successfully for CustomerId: {customerCreatedEvent.Id}");
-            return true;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Error creating credit card for CustomerId: {CustomerId}", customerCreatedEvent.Id);
-
-            return false;
+                _eventProcessor.Process(creditCard.Events);
+            }
         }
 
+        _logger.LogInformation($"Credit cards created successfully for CustomerId: {customerCreatedEvent.Id}");
     }
 }

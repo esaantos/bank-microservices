@@ -1,5 +1,4 @@
-﻿using Customers.Application.Commands;
-using Customers.Core.Entities;
+﻿using Customers.Core.Entities;
 using Customers.Core.Repositories;
 using Customers.Infrastructure.MessageBus;
 using MediatR;
@@ -23,6 +22,8 @@ public class AddCustomersHandler : IRequestHandler<AddCustomers, int>
                 request.BirthDate, request.Income);
 
         await _repository.AddAsync(customer);
+
+        customer.CreateEvent(customer);
 
         _eventProcessor.Process(customer.Events);
 

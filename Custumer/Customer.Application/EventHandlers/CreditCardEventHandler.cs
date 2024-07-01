@@ -16,16 +16,18 @@ public class CreditCardEventHandler : INotificationHandler<CreditCardCreatedEven
         _logger = logger;
     }
 
-    public async Task Handle(CreditCardCreatedEvent @event, CancellationToken cancellationToken)
+    public async Task Handle(CreditCardCreatedEvent notification, CancellationToken cancellationToken)
     {
-        var customer = await _customerRepository.GetByIdAsync(@event.CustomerId);
-        if (customer != null)
+        var customer = await _customerRepository.GetByIdAsync(notification.CustomerId);
+        if(customer != null)
         {
-            customer.AddCreditCard(@event.CreditCardId);
-            await _customerRepository.UpdateAsync(customer);
+            customer.AddCreditCard(notification.CardNumber);
+
+            await _customerRepository.UpdateCreditCardNumbersAsync(customer);
             _logger.LogInformation("Customer's credit card added successfully.");
         }
-        _logger.LogWarning($"Customer {@event.CustomerId} was not found and actions related to the event were not executed!");
+        else
+            _logger.LogWarning($"Customer {notification.CustomerId} was not found and actions related to the event were not executed!");
     }
 
 }

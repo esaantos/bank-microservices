@@ -4780,11 +4780,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
+      "projectUniqueName": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
       "projectName": "CreditCards.API",
-      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
+      "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.API\\CreditCards.API.csproj",
       "packagesPath": "C:\\Users\\everson.santos\\.nuget\\packages\\",
-      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.API\\obj\\",
+      "outputPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\everson.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4804,8 +4804,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.Application\\CreditCards.Application.csproj": {
-              "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard\\CreditCard.Application\\CreditCards.Application.csproj"
+            "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.Application\\CreditCards.Application.csproj": {
+              "projectPath": "C:\\PaymentAutomation\\ParanaBank\\CreditCard\\CreditCard.Application\\CreditCards.Application.csproj"
             }
           }
         }

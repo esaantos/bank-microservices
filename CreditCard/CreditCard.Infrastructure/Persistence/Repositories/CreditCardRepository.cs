@@ -1,5 +1,6 @@
 ﻿using CreditCards.Core.Entities;
 using CreditCards.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace CreditCards.Infrastructure.Persistence.Repositories;
 
@@ -16,9 +17,14 @@ public class CreditCardRepository : ICreditCardRepository
     {
         return await _context.CreditCards.FindAsync(id);
     }
-    public async Task AddAsync(List<CreditCard> creditCards)
+    public async Task AddAsync(CreditCard creditCard)
     {
-        _context.CreditCards.AddRangeAsync(creditCards);
+        await _context.CreditCards.AddAsync(creditCard);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<IEnumerable<CreditCard>> GetCreditCardsByCustomerIdAsync(int id)
+    {
+        return await _context.CreditCards.Where(c => c.CustomerId == id).ToListAsync();
     }
 }

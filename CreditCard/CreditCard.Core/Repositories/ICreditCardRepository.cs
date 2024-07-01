@@ -3,6 +3,7 @@
 namespace CreditCards.Core.Repositories;
 public interface ICreditCardRepository
 {
-    Task AddAsync(List<CreditCard> creditCards);
+    Task AddAsync(CreditCard creditCards);
     Task<CreditCard> GetByIdAsync(int id);
+    Task<IEnumerable<CreditCard>> GetCreditCardsByCustomerIdAsync(int id);
 }

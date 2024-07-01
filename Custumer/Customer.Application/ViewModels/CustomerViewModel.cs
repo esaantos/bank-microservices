@@ -4,7 +4,7 @@ namespace Customers.Application.ViewModels;
 
 public class CustomerViewModel
 {
-    public CustomerViewModel(int id, string fullName, string email, decimal income, decimal creditProposal, List<int> creditCard)
+    public CustomerViewModel(int id, string fullName, string email, decimal income, decimal creditProposal, List<string> creditCard)
     {
         Id = id;
         FullName = fullName;
@@ -19,5 +19,5 @@ public class CustomerViewModel
     public string Email { get; set; }
     public decimal Income { get; set; }
     public decimal CreditProposal { get; set; }
-    public List<int> CreditCards { get; set; } = new List<int>();
+    public List<string> CreditCards { get; set; } = new List<string>();
 }

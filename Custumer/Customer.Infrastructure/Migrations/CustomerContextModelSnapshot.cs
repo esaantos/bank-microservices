@@ -39,12 +39,12 @@ namespace Customers.Infrastructure.Migrations
                         .HasColumnType("nchar(11)")
                         .IsFixedLength();
 
-                    b.Property<string>("CreditCardIds")
+                    b.Property<string>("CreditCardNumbers")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CreditProposalId")
-                        .HasColumnType("int");
+                    b.Property<decimal>("CreditProposalValue")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Email")
                         .IsRequired()

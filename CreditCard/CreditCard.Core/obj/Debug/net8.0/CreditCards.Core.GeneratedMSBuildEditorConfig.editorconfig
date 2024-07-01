@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CreditCards.Core
-build_property.ProjectDir = C:\PaymentAutomation\ParanaBank\CreditCard\CreditCard\CreditCard.Core\
+build_property.ProjectDir = C:\PaymentAutomation\ParanaBank\CreditCard\CreditCard.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

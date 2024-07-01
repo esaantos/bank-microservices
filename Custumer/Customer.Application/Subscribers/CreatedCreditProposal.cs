@@ -18,7 +18,7 @@ public class CreatedCreditProposal : BackgroundService
     private readonly IModel _channel;
     private const string QueueName = "customer-service/proposal-created-subscriber";
     private const string Exchange = "credit-proposal-exchange";
-    private const string RoutingKey = "proposal-created";
+    private const string RoutingKey = "credit-proposal-created-event";
 
     public CreatedCreditProposal(IServiceProvider serviceProvider, ILogger<CreatedCreditProposal> logger)
     {
@@ -44,13 +44,41 @@ public class CreatedCreditProposal : BackgroundService
             var contentString = Encoding.UTF8.GetString(contentArray);
             var @event = JsonConvert.DeserializeObject<CreditProposalCreatedEvent>(contentString);
 
-            _logger.LogInformation($"Message CreatedCreditProposal received with Id {@event.ProposalId}");
-            _channel.BasicAck(eventArgs.DeliveryTag, false);
+            _logger.LogInformation($"Message CreatedCreditProposal received with Id {@event.CustomerId}");
 
-            using(var scope = _serviceProvider.CreateScope())
+            using (var scope = _serviceProvider.CreateScope())
             {
                 var handler = scope.ServiceProvider.GetRequiredService<INotificationHandler<CreditProposalCreatedEvent>>();
-                await handler.Handle(@event, stoppingToken);
+                bool processed = false;
+                int retryCount = 0;
+                const int maxRetryAttempts = 3;
+
+                while (!processed && retryCount < maxRetryAttempts)
+                {
+                    try
+                    {
+                        await handler.Handle(@event, stoppingToken);
+                        _channel.BasicAck(eventArgs.DeliveryTag, false);
+                        processed = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        retryCount++;
+                        _logger.LogError(ex, $"Error processing message with Id {@event.CustomerId}. Attempt {retryCount} of {maxRetryAttempts}");
+
+                        if (retryCount >= maxRetryAttempts)
+                        {
+                            _channel.BasicNack(eventArgs.DeliveryTag, false, false); // Reject and do not requeue
+                            _logger.LogError($"Message with Id {@event.CustomerId} could not be processed after {maxRetryAttempts} attempts and will be nacked.");
+                            processed = true;
+                        }
+                        else
+                        {
+                            // Optionally implement a backoff strategy before retrying
+                            await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+                        }
+                    }
+                }
             }
         };
 

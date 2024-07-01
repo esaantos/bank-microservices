@@ -6,4 +6,5 @@ public interface ICreditProposalRepository
 {
     Task<CreditProposal> GetByIdAsync(int id);
     Task AddAsync(CreditProposal creditsProposal);
+    Task<CreditProposal> GetCreditCardsByCustomerIdAsync(int customerId);
 }

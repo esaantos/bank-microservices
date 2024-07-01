@@ -1,27 +1,25 @@
-﻿namespace CreditCards.Core.Entities;
+﻿using CreditCards.Core.Events;
 
-public class CreditCard
+namespace CreditCards.Core.Entities;
+
+public class CreditCard : AggregateRoot
 {
     public CreditCard(int customerId, string cardHolderName, string cardNumber)
     {
         CardNumber = cardNumber;
         CardHolderName = cardHolderName;
         ExpirationDate = DateTime.UtcNow.AddYears(8);
-        CVV = GenerateCvv();
+        CVV = new Random().Next(100, 1000).ToString(); ;
         CustomerId = customerId;
+
+        AddEvent(new CreditCardCreatedEvent(CustomerId, CardHolderName, CardNumber, ExpirationDate, CVV));
     }
 
-    public int Id { get; private set; }
     public string CardNumber { get; private set; }
     public string CardHolderName { get; private set; }
     public DateTime ExpirationDate { get; private set; }
     public string CVV { get; private set; }
     public int CustomerId { get; private set; }
-
-    private string GenerateCvv()
-    {
-        return new Random().Next(100, 1000).ToString();
-    }
 
     public static string GenerateCreditCardNumber()
     {
@@ -73,6 +71,7 @@ public class CreditCard
     public static List<CreditCard> GenerateCreditCards(int id, string fullName, decimal income)
     {
         var creditCards = new List<CreditCard>();
+
         if (income >= 5000 && income < 10000)
         {
             creditCards.Add(new CreditCard(id, fullName, CreditCard.GenerateCreditCardNumber()));
@@ -90,4 +89,5 @@ public class CreditCard
         }
         return creditCards;
     }
+
 }

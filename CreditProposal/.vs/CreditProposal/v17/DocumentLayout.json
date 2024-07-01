@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\",
+  "WorkspaceRootPath": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BB62757-885D-435A-A7C2-0F2AAEF1AE41}|CreditsProposal.Application\\CreditsProposal.Application.csproj|c:\\paymentautomation\\paranabank\\creditproposal\\creditproposal\\creditsproposal.application\\backgroundservices\\customercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BB62757-885D-435A-A7C2-0F2AAEF1AE41}|CreditsProposal.Application\\CreditsProposal.Application.csproj|solutionrelative:creditsproposal.application\\backgroundservices\\customercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D19C1027-9A66-4791-80B6-5AED9AEB3A05}|CreditsProposal.API\\CreditsProposal.API.csproj|c:\\paymentautomation\\paranabank\\creditproposal\\creditsproposal.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D19C1027-9A66-4791-80B6-5AED9AEB3A05}|CreditsProposal.API\\CreditsProposal.API.csproj|solutionrelative:creditsproposal.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,14 +59,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomerCreatedConsumer.cs",
-              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.Application\\BackgroundServices\\CustomerCreatedConsumer.cs",
-              "RelativeDocumentMoniker": "CreditsProposal.Application\\BackgroundServices\\CustomerCreatedConsumer.cs",
-              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditProposal\\CreditsProposal.Application\\BackgroundServices\\CustomerCreatedConsumer.cs",
-              "RelativeToolTip": "CreditsProposal.Application\\BackgroundServices\\CustomerCreatedConsumer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:53:02.555Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CreditsProposal.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\PaymentAutomation\\ParanaBank\\CreditProposal\\CreditsProposal.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CreditsProposal.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-01T15:18:26.728Z",
               "EditorCaption": ""
             }
           ]

@@ -18,25 +18,30 @@ public class Customer : AggregateRoot
     public string Email { get; private set; }
     public DateTime BirthDate { get; private set; }
     public decimal Income { get; private set; }
-    public int CreditProposalId { get; private set; }
-    public List<int> CreditCardIds { get; private set; } = new List<int>();
+    public decimal CreditProposalValue { get; private set; }
+    public ICollection<string> CreditCardNumbers { get; private set; } = new List<string>();
 
     public static Customer Create(string fullName, string cpf, string email, DateTime birthDate, decimal income)
     {
         var customer = new Customer(fullName, cpf, email, birthDate, income);
 
-        customer.AddEvent(new CustomerCreated(customer.Id, customer.FullName, customer.Email, customer.Income));
-
         return customer;
     }
 
-    public void AddCreditCard(List<int> creditCardId)
+    public void CreateEvent(Customer customer)
     {
-        CreditCardIds.AddRange(creditCardId);
+        customer.AddEvent(new CustomerCreated(customer.Id, customer.FullName, customer.Email, customer.Income));
     }
 
-    public void AddCreditProposal(int creditProposalId)
+    public void AddCreditCard(string creditCardNumber)
     {
-        CreditProposalId = creditProposalId;
+        if(!CreditCardNumbers.Contains(creditCardNumber))
+            CreditCardNumbers.Add(creditCardNumber);
+    }
+
+    public void AddCreditProposal(decimal creditProposalValue)
+    {
+        if (CreditProposalValue == 0)
+            CreditProposalValue = creditProposalValue;
     }
 }

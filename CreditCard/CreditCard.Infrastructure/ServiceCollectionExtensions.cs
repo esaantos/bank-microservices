@@ -38,8 +38,8 @@ public static class ServiceCollectionExtensions
         var connection = connectionFactory.CreateConnection("creditcard-service-producer");
 
         services.AddSingleton(connection);
-        services.AddSingleton<IEventPublisher, RabbitMQEventPublisher>();
-
+        services.AddSingleton<IMessageBusClient, RabbitMQEventPublisher>();
+        services.AddTransient<IEventProcessor, EventProcessor>();
         return services;
     }
 

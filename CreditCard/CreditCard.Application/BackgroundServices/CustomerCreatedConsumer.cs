@@ -1,11 +1,13 @@
 ﻿using CreditCards.Application.Services;
 using CreditCards.Core.Events;
+using CreditCards.Infrastructure.MessageBus;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
 using System.Text;
 
 namespace CreditCards.Application.BackgroundServices
@@ -17,8 +19,8 @@ namespace CreditCards.Application.BackgroundServices
         private readonly IModel _channel;
         private readonly ILogger<CustomerCreatedConsumer> _logger;
         private const string Exchange = "customer-service";
-        private const string QueueName = "credit-card-service-queue";
-        private const int MaxRetry = 3;
+        private const string QueueName = "credit-card-service-queue";        
+        private const int maxRetry = 3;
 
         public CustomerCreatedConsumer(IServiceProvider serviceProvider, ILogger<CustomerCreatedConsumer> logger)
         {
@@ -30,9 +32,9 @@ namespace CreditCards.Application.BackgroundServices
             _connection = connectionFactory.CreateConnection();
             _channel = _connection.CreateModel();
 
-            _channel.ExchangeDeclare(Exchange, "topic", true);
+            _channel.ExchangeDeclare(Exchange, "fanout", true);
             _channel.QueueDeclare(QueueName, true, false, false, null);
-            _channel.QueueBind(QueueName, "customer-service", "customer-created");
+            _channel.QueueBind(QueueName, Exchange, "");
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
@@ -47,44 +49,42 @@ namespace CreditCards.Application.BackgroundServices
 
                 _logger.LogInformation($"Message CustomerCreated received with Id {customerCreatedEvent.Id}");
 
-                bool success = false;
                 using (var scope = _serviceProvider.CreateScope())
                 {
+
                     var creditCardService = scope.ServiceProvider.GetRequiredService<ICreditCardService>();
-                    success = await creditCardService.HandleCustomerCreatedAsync(customerCreatedEvent, stoppingToken);
-                }
-
-                if (success) 
-                    _channel.BasicAck(ea.DeliveryTag, false);
-                else
-                {
+                    bool processed = false;
                     int retryCount = 0;
-                    if (ea.BasicProperties.Headers != null && ea.BasicProperties.Headers.ContainsKey("x-retry-count"))
-                    {
-                        retryCount = (int)ea.BasicProperties.Headers["x-retry-count"];
-                    }
 
-                    if (retryCount < MaxRetry)
+                    while (!processed && retryCount < maxRetry)
                     {
-                        var properties = _channel.CreateBasicProperties();
-                        properties.Headers = ea.BasicProperties.Headers ?? new Dictionary<string, object>();
-                        properties.Headers["x-retry-count"] = ++retryCount;
+                        try
+                        {
+                            await creditCardService.HandleCustomerCreatedAsync(customerCreatedEvent, stoppingToken);
+                            _channel.BasicAck(ea.DeliveryTag, false);
+                            processed = true;
+                        }
+                        catch (Exception ex)
+                        {
+                            retryCount++;
 
-                        _channel.BasicPublish(
-                            exchange: Exchange,
-                            routingKey: "customer-created",
-                            basicProperties: properties,
-                            body: body
-                        );
-                        _channel.BasicAck(ea.DeliveryTag, false);
-                    }
-                    else
-                    {
-                        _logger.LogError($"Message CustomerCreated with Id {customerCreatedEvent.Id} failed after {MaxRetry} attempts.");
-                        _channel.BasicNack(ea.DeliveryTag, false, false); // Optionally move to a dead-letter queue
+                            _logger.LogError(ex, $"Error processing message with Id {customerCreatedEvent.Id}. Attempt {retryCount} of {maxRetry}");
+
+                            if (retryCount >= maxRetry)
+                            {
+                                _channel.BasicNack(ea.DeliveryTag, false, false); // Reject and do not requeue
+                                _logger.LogError($"Message with Id {customerCreatedEvent.Id} could not be processed after {maxRetry} attempts and will be nacked.");
+                                processed = true;
+                            }
+                            else
+                            {
+                                // Optionally implement a backoff strategy before retrying
+                                await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+                            }
+                        }
+
                     }
                 }
-
             };
             _channel.BasicConsume(QueueName, false, consumer);
 

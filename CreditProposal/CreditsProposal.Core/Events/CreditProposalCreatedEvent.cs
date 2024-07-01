@@ -1,13 +1,13 @@
 ﻿namespace CreditsProposal.Core.Events;
 
-public record CreditProposalCreatedEvent
+public class CreditProposalCreatedEvent : IDomainEvent
 {
-    public CreditProposalCreatedEvent(int customerId, int? proposalId)
+    public CreditProposalCreatedEvent(int customerId, decimal creditValue)
     {
         CustomerId = customerId;
-        ProposalId = proposalId;
+        CreditValue = creditValue;
     }
 
-    public int CustomerId { get; set; }
-    public int? ProposalId { get; set; }
+    public int CustomerId { get; }
+    public decimal CreditValue { get; }
 }

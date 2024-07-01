@@ -45,13 +45,14 @@ public class CustomerConfigurations : IEntityTypeConfiguration<Customer>
             .HasColumnType("decimal(18,2)");
 
         builder
-            .Property(c => c.CreditProposalId);
+            .Property(c => c.CreditProposalValue)
+            .HasColumnType("decimal(18,2)");
 
         builder
-            .Property(c => c.CreditCardIds)
+            .Property(c => c.CreditCardNumbers)
             .HasConversion(
-                v => string.Join(',', v),
-                v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList());
+                v => string.Join(',', v), // Converte a lista de strings para uma única string separada por vírgulas
+                v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList());
 
     }
 }

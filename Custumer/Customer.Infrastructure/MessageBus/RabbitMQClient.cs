@@ -12,7 +12,7 @@ public class RabbitMQClient : IMessageBusClient
     {
         _connection = producerConnection.Connection;
     }
-    public void Publish(object message, string routingKey, string exchange)
+    public void Publish<T>(T @event, string exchange) where T : class
     {
         var channel = _connection.CreateModel();
 
@@ -22,11 +22,11 @@ public class RabbitMQClient : IMessageBusClient
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
 
-        var payload = JsonConvert.SerializeObject(message, settings);
+        var payload = JsonConvert.SerializeObject(@event, settings);
         var body = Encoding.UTF8.GetBytes(payload);
 
-        channel.ExchangeDeclare(exchange, "topic", true);
+        channel.ExchangeDeclare(exchange, "fanout", true);
 
-        channel.BasicPublish(exchange, routingKey, null, body);
+        channel.BasicPublish(exchange, "", null, body);
     }
 }
